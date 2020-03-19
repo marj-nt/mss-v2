@@ -5,6 +5,7 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="css/MSS_styles.css">
+        <link rel="stylesheet" href="css/v2.css">
         <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         
@@ -12,90 +13,38 @@
             Mermaid's Swim School
         </title>
 
-        <div class="rectangle-header container-fluid">
-
-            <div class="row header-wrapper">
-                
-                <img src="images/logo.png" class="logo" alt="Mermaid Swim School emblem"/>
-                    
-                <div class="middle">
-    
-                    <h1 class="MSSheader">
-                    Mermaid's Swim School
-                    </h1>
-                    
-                    <h2 class="tagline">
-                    Teaching the Central Valley to swim one
-                    fish at a time!
-                    </h2>
-                </div>
-
-                <!-- Hamburger navbar mobile -->
-                
-                <div class="hamburger-icon-mobile hidden-lg">
-                    <img src="images/hamburger_mobile.png" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
-                    aria-expanded="false" aria-label="Toggle navigation"/>
-                </div>
-
-            </div> <!-- end header-wrapper -->
-            
-            <!-- Button navbar desktop -->
-            <div class="container-fluid navigation-container-lg hidden-sm">
-                <div class="row">
-
-                    <div class="col" id="nav1">
-                        <a href="index.html">Home</a>
-                    </div>
-                    <div class="col" id="nav2">
-                        <a href="MSS_programs_and_prices.html">Programs &
-                        Prices</a>
-                    </div>
-                    <div class="col" id="nav3">
-                        <a href="MSS_scheduling.html">Scheduling</a>
-                    </div>
-                    <div class="col" id="nav4">
-                        <a href="MSS_about_makenna.html">About Makenna</a>
-                    </div>
-                    <div class="col" id="nav5">
-                        <a href="MSS_contact_me.html">Contact</a>
-                    </div>
-                </div>
-            </div> <!-- end navigation-container -->
-                
-            <!-- Collapsible content, mobile, after header-wrapper -->
-            <div class="hamburger navigation-container-sm collapse navbar-collapse hidden-lg" id="navbarSupportedContent1">
-                
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="MSS_programs_and_prices.html">Programs & Prices</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="MSS_scheduling.html">Scheduling</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="MSS_about_makenna.html">About Makenna</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="MSS_contact_me.html">Contact</a>
-                    </li>
-                </ul>
-                    
-            </div> <!-- end navigation-container-mobile -->
-
-        </div> <!-- end rectangle-header -->
+        <nav class="navbar sticky-top">
+        
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png"/>
+            </a>
+            <a class="navbar-brand" href="MSS_programs_and_prices.html">Programs and Prices</a>
+            <a class="navbar-brand" href="MSS_scheduling.html">Schedule</a>
+            <a class="navbar-brand" href="MSS_about_makenna.html">About Makenna</a>
+            <a class="navbar-brand" href="MSS_contact_me.html">Contact</a>
+          </nav>
         
     </head>
     
-    <body>
+    <body id="mss-programs-and-prices">
+
+        <div id="contact-header">
+            #
+        </div>
 
         <div class="body-top-sandy">
                     
             <h3 class="red-script programs-title">What we can
                 provide for you!
             </h3>
+
+            <div class="swimmers-age">
+                <p class="swimmers-age-text">
+                    Each swimmer’s age determines our teaching style.
+                    <br>
+                    Then we focus on developing a skill area!
+                </p>
+            </div>
 
             <!-- Programs in mobile layout -->
 
@@ -182,98 +131,104 @@
                 </div>
 
             </div> <!--End of programs-container-mobile-->
-                
-            <div class="programs-container-lg container-fluid hidden-sm">
 
-                <div class="row programs-row-lg">
+            <div class="row">
+                <div class="col col-md-4 col-xs-12">
+                    <div class="program-prices-outer">
+                        <div class="program-prices-top">
+                            <img src="images/babies_pic.jpg"/>
+                        </div>
                         
-                    <div class="col programs-col-lg">
-                        <img src="images/babies_pic.jpg" class="pp-images-lg" alt="Baby and instructor swimming"/>
-                        <h5 class="programs-heading-lg">Babies & Children</h5>
-                        <p class="programs-description-lg">$20 / 30 min
-                            session
-                        
-                        <!-- Dropdown button when clicked will show/hide dropdown for Babies & Children -->
-                        <button class="learn-more" type="button" data-toggle="collapse" 
+                        <div class="program-prices-bottom">
+                            Babies & Children
+                            <br>
+                            $20 / 30 min session
+                            <button class="learn-more" type="button" data-toggle="collapse" 
                         data-target=".collapse-babies" aria-expanded="false" 
                         aria-controls=".collapse-babies">&#x25bc;</button>
-
-                        </p>
-
-                        <!-- The hidden dropdown for Babies & Children -->
-                        <div class="collapse collapse-babies">
-                            <!-- Make CSS style on "card" not "collapse" to prevent transition -->
-                            <div class="card card-body">
-                                <b>Infants</b> are slowly introduced to the water by being safely held at all times. We create a relationship
-                                with the water early by playing, swimming, and blowing bubbles! This is also a great way for infants to
-                                practice physical development skills. Pool is heated
-                                to at least 90&#8457;. 
-                                <br>
-                                <br>
-                                <b>Younger children</b> are taught how to be safe and responsible
-                                in the water. Short distance swimming is good for children of this
-                                age. Depending on the child's skill level, we work on breathing,
-                                floating, and paddling. We want to encourage independent swimming
-                                and building good muscle memory early on!
-                            </div>
-                        </div>
-
-                    </div>                
-
-                    <div class="col programs-col-lg">
-                        <img src="images/kids_pic.jpg" class="pp-images-lg" alt="Swimmer child smiling"/>
-                        <h5 class="programs-heading-lg">All Ages</h5>
-                        <p class="programs-description-lg">$25 / 30 min
-                            session
-                        
-
-                        <!-- Dropdown button when clicked will show/hide dropdown for All Ages -->
-                        <button class="learn-more" type="button" data-toggle="collapse" 
-                        data-target=".collapse-all-ages" aria-expanded="false" 
-                        aria-controls=".collapse-all-ages">&#x25bc;</button>
-
-                        </p>
-
-                        <!-- The hidden dropdown for All ages -->
-                        <div class="collapse collapse-all-ages">
-                            <div class="card card-body">
-                                <b>Older Children</b> are allowed to center lessons around competitive swimming.
-                                Standard lessons are similar to those for younger children with an emphasis on safety
-                                and fundamentals.
-                                <br>
-                                <br>
-                                <b>Teens & Adults</b> are encouraged to work on their relationship with the water at any level.
-                                This includes first-time swimmers that want to overcome fear, as well as adult
-                                swimmers that would like to improve their strokes for competition.  It's never too late to learn!
-                            </div>
                         </div>
                     </div>
-                        <div class="col programs-col-lg">
-                            <img src="images/party_lifeguard_program.jpg" class="pp-images-lg" alt="Balloons in a pool for a party"/>
-                            <h5 class="programs-heading-lg">Party Lifeguard</h5>
-                            <p class="programs-description-lg">$40 / hour
-
-                            <!-- Dropdown button when clicked will show/hide dropdown for All Ages -->
-                        <button class="learn-more" type="button" data-toggle="collapse" 
-                        data-target=".collapse-party-lifeguard" aria-expanded="false" 
-                        aria-controls=".collapse-party-lifeguard">&#x25bc;</button>
-
-                        </p>
-
-                        <!-- The hidden dropdown for party lifeguard -->
-                        <div class="collapse collapse-party-lifeguard">
-                            <div class="card card-body" id="card-party-lifeguard">
-                                Make sure that your pool party is fun and safe!
-                                <br>
-                                Hiring a lifeguard ensures that all swimmers can enjoy themselves
-                                while someone is ready and watching the water at all times.
-                                <br>
-                                Lifeguard is certified in First Aid, CPR, and AED.
-                            </div>
-                        </div>
-                    </div>  
                     
                 </div>
+                <div class="col col-md-4 col-xs-12">
+                    <div class="program-prices-outer">
+                        <div class="program-prices-top">
+                            <img src="images/kids_pic.jpg"/>
+                        </div>
+                        
+                        <div class="program-prices-bottom">
+                            All Ages
+                            <br>
+                            $25 / 30 min session
+                            <button class="learn-more" type="button" data-toggle="collapse" 
+            data-target=".collapse-all-ages" aria-expanded="false" 
+            aria-controls=".collapse-all-ages">&#x25bc;</button>
+                        </div>
+                </div>
+                </div>
+                <div class="col col-md-4 col-xs-12">
+                    <div class="program-prices-outer">
+                        <div class="program-prices-top">
+                            <img src="images/party_lifeguard_program.jpg"/>
+                        </div>
+                        
+                        <div class="program-prices-bottom">
+                            Party Lifeguard
+                            <br>
+                            $40 / hour
+                            <button class="learn-more" type="button" data-toggle="collapse" 
+                        data-target=".collapse-party-lifeguard" aria-expanded="false" 
+                        aria-controls=".collapse-party-lifeguard">&#x25bc;</button>
+                        </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="collapse collapse-babies">
+                <!-- Make CSS style on "card" not "collapse" to prevent transition -->
+                <div class="card card-body">
+                    <b>Infants</b> are slowly introduced to the water by being safely held at all times. We create a relationship
+                    with the water early by playing, swimming, and blowing bubbles! This is also a great way for infants to
+                    practice physical development skills. Pool is heated
+                    to at least 90&#8457;. 
+                    <br>
+                    <br>
+                    <b>Younger children</b> are taught how to be safe and responsible
+                    in the water. Short distance swimming is good for children of this
+                    age. Depending on the child's skill level, we work on breathing,
+                    floating, and paddling. We want to encourage independent swimming
+                    and building good muscle memory early on!
+                </div>
+            </div>
+
+            
+
+            
+            <!-- The hidden dropdown for All ages -->
+            <div class="collapse collapse-all-ages">
+                <div class="card card-body">
+                    <b>Older Children</b> are allowed to center lessons around competitive swimming.
+                    Standard lessons are similar to those for younger children with an emphasis on safety
+                    and fundamentals.
+                    <br>
+                    <br>
+                    <b>Teens & Adults</b> are encouraged to work on their relationship with the water at any level.
+                    This includes first-time swimmers that want to overcome fear, as well as adult
+                    swimmers that would like to improve their strokes for competition.  It's never too late to learn!
+                </div>
+            </div>
+
+            <div class="collapse collapse-party-lifeguard">
+                <div class="card card-body" id="card-party-lifeguard">
+                    Make sure that your pool party is fun and safe!
+                    <br>
+                    Hiring a lifeguard ensures that all swimmers can enjoy themselves
+                    while someone is ready and watching the water at all times.
+                    <br>
+                    Lifeguard is certified in First Aid, CPR, and AED.
+                </div>
+            </div>
+                
 
                     
 
@@ -285,13 +240,7 @@
                     
         
 
-                        <div class="swimmers-age">
-                            <p class="swimmers-age-text">
-                                Each swimmer’s age determines our teaching style.
-                                <br>
-                                Then we focus on developing a skill area!
-                            </p>
-                        </div>
+                        
 
                         <div class="skills-container-lg hidden-sm" data-aos="fade-up" data-aos-anchor-placement="top">
                 
@@ -507,12 +456,15 @@
 
         </div>
   
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script src="bower_components/aos/dist/aos.js"></script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script src="MSS.js"></script>
+        <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="MSS.js"></script>
           <script>
             AOS.init({
                 disable: false,
@@ -530,6 +482,36 @@
                 anchorPlacement: 'top-bottom',
             });
           </script>
+          
+          <script>
+            $('button').click( function(e) {
+    $('.collapse').collapse('hide');
+});
+        </script>
+        <script>
+            // Initial state
+        var scrollPos = 0;
+        // adding scroll event
+        window.addEventListener('scroll', function(){
+          // detects new state and compares it with the new one
+          if ((document.body.getBoundingClientRect()).top < scrollPos) {
+                console.log('down')
+                $('.navbar').fadeOut();
+                
+          }
+               
+                
+            else {
+                console.log('up');
+                $('.navbar').fadeIn();
+                
+                
+            }
+            // saves the new position for iteration.
+            scrollPos = (document.body.getBoundingClientRect()).top;
+            
+        });
+        </script>
     </body>
 
     <footer class="footer">

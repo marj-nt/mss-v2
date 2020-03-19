@@ -30,7 +30,7 @@ body
 
 .navbar {
     font-family: 'Megan June';
-    background-color: rgba(163, 237, 255, 0.5);
+    background-color: rgba(163, 237, 255, 0.75);
     position: fixed;
     width: 100%;
     
@@ -266,6 +266,40 @@ body
     transition: 0s
   }
 
+  .program-prices-outer {
+      margin: 20px 50px 20px 50px;
+      padding: 20px 0px 30px 0px;
+      background: white;
+      text-align: center;
+      position: relative;
+      box-shadow: 2px 2px 5px #d1d1d1;
+  }
+
+  .program-prices-outer img {
+      width: 50%;
+      
+      margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        border-radius: 100%;
+       
+        
+  }
+
+  .program-prices-top {
+    background: linear-gradient(180deg, #44B2E3 75%, white 0%);
+    text-align: center;
+    
+}
+
+.card-body {
+    width: 75%;
+    margin: 0 auto;
+    border: 5px solid;
+    border-image-source: linear-gradient(180deg, #44B2E3, rgb(75, 201, 255));
+  border-image-slice: 1;
+}
 
 
 
