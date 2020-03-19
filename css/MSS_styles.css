@@ -1,0 +1,1329 @@
+@font-face {
+    font-family: 'Humble';
+    src: url('./fonts/Humble.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Megan June';
+    src: url('./fonts/Megan_June.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins_Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Freight';
+    src: url('./fonts/Freight_Text_Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*** Keyframes - Animations used on navigation bar ***/
+
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.hide-class {
+    display: none;
+}
+
+/* Hidden aspects on desktop/otherwise */
+
+.header-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+}
+
+.logo {
+    overflow: visible;
+    text-align: center;
+    box-sizing: border-box;
+
+    height: 11vw;
+
+    transform: translate(10%, 10%);
+  -ms-transform: translate(10%, 10%);
+}
+
+.middle {
+    position: relative;
+    left: 5%;
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    
+
+    box-sizing: border-box;
+    padding-top: 20px 0px; /*top and bottom*/
+
+}
+
+.rectangle-header {
+    width: 100%;
+    background: linear-gradient(#FFFFFF, #8BE3F2, #6ADBEE,
+    #40D1E9, #00C2E2);
+}
+
+.MSSheader {
+    color: #133A68;
+    font-family: "Humble";
+    font-size: 7vw;
+    
+    box-sizing: border-box;
+    letter-spacing: 2px;
+    margin: 10px 0px; /*top and bottom*/
+
+    
+}
+
+.tagline {
+    color: black;
+    font-family: "Megan June";
+    font-size: 2.5vw;
+    letter-spacing: 3px;
+    opacity: 0.5;
+}
+
+/***  Navigation Bar ** */
+
+.navigation-container-lg {
+    box-sizing: border-box;
+    padding: 10px 0px;
+}
+.row {
+    box-sizing: border-box;
+    padding: 10px 0px; /*top and bottom*/
+}
+
+
+#nav1 a, #nav2 a, #nav3 a, #nav4 a, #nav5 a {
+
+    background: linear-gradient(#7ED7E3, #C2D9DD);
+    opacity: 75%;
+    border-radius: 15px;
+    box-shadow: 0px 1px 1px #409AE2;
+    
+    font-family: "Lucida Grande", bold;
+    color: #133A68;
+    font-size: 1.25vw;
+    text-shadow: 0px 1px 5px #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+
+    display: block;
+    text-align: center;
+
+    height: 60px;
+    line-height: 60px;
+}
+
+
+@media screen and (max-width: 1170px) {
+    #nav1 a, #nav2 a, #nav3 a, #nav4 a, #nav5 a {
+
+        background: linear-gradient(#7ED7E3, #C2D9DD);
+        opacity: 75%;
+        border-radius: 15px;
+        box-shadow: 0px 1px 1px #409AE2;
+        
+        font-family: "Lucida Grande", bold;
+        color: #133A68;
+        font-size: 1.25vw;
+        text-shadow: 0px 1px 5px #FFFFFF;
+        text-decoration: none;
+        letter-spacing: 1.5px;
+    
+        display: block;
+        text-align: center;
+    
+        height: 60px;
+        line-height: 60px;
+    }
+}
+
+#nav1 a:hover, #nav2 a:hover, #nav3 a:hover, #nav4 a:hover, #nav5 a:hover {
+    font-family: "Lucida Grande", bold;
+    color: #133A68;
+    font-size: 1.25vw;
+    text-shadow: 0px 1px 5px #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+
+    display: block;
+    text-align: center;
+
+    height: 60px;
+
+    box-shadow: 0px 0px 5px 5px #FEDCAE;
+
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
+
+/* Responsive small screen nav */
+
+.navigation-container-sm {
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    
+}
+
+.nav-link {
+    font-family: "Megan June", bold;
+    color: #133A68;
+    font-size: 4vw;
+    text-shadow: 0px 1px 5px #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    
+}
+
+.logo-container {
+    border: 2px dashed green;
+}
+
+.logo-scheduling {
+    width: 30vw;
+    opacity: 0.7;
+}
+
+.hamburger-icon-mobile {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+.kids-container img {
+    width: 100%;
+}
+
+.body-top-sandy {
+    background: linear-gradient(rgb(245, 223, 191), #FFFFFF);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0vw;
+}
+
+.body-top-ocean {
+    background: linear-gradient(#FFFFFF, #CCEDF8);
+    box-sizing: border-box;
+    padding: 0vw;
+    width: 100%;
+    text-align: center;
+}
+
+.body-bottom-blue {
+    background: linear-gradient(#FFFFFF, #08B1E3);
+    width: 100%;  
+}
+
+.home-intro-container {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+
+    box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 5vw 0vw;
+}
+
+.red-script {
+    color: #D0021B;
+    font-family: "SignPainter", "HouseScript";
+    text-align: center;
+    font-size: 7vw;
+}
+
+#welcome-title {
+    size: 8vw;
+    padding: 2vw 0vw;
+}
+
+.home-intro-text {
+    width: 92%;
+    margin: 0 auto;
+
+    font-family: "Freight";
+    font-size: 4.2vw;
+    line-height: 7vw;
+
+    color: #133A68;
+    text-align: left;
+
+    box-sizing: border-box;
+    padding: 2vw 0vw;
+}
+
+#home-intro-top {
+    box-sizing: border-box;
+    padding-bottom: 5vw;
+}
+
+#home-intro-bottom {
+    box-sizing: border-box;
+    margin-top: -10vw;
+}
+
+.index-pics-sm img {
+    width: 100%;
+
+    z-index: -1;
+}
+
+.index-pics-sm .btn{
+    width: 44vw;
+    height: 9vw;
+    border-radius: 1vw;
+    box-shadow: 0px 2px 4px black;
+    
+    font-family: "SignPainter";
+    font-size: 5vw;
+    letter-spacing: 0.6vw;
+    color: white;
+    
+}
+
+#private-lessons-sm {
+    background: #D0012B;
+
+    display: block;
+    position: relative;
+    
+    top: -26vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+
+}
+
+#party-lifeguard-sm{
+    background: #44B8F8;
+
+    display: block;
+    position: relative;
+
+    top: -20vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.goals-container {
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 2vw 0vw;
+}
+
+.goals-row {
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.goals-col {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5vw 0vw;
+}
+
+.goals-col img {
+    padding-bottom: 10vw;
+    text-align: center;
+}
+.goals-icons-sm img {
+    box-sizing: border-box;
+    padding: 10vw 0vw;
+}
+
+.goals-heading {
+    color: #D0021B;
+    font-family: "Megan June";
+    font-size: 6vw;
+    text-align: center;
+}
+
+.goals-text {
+    color: #133A68;
+    font-family: "Poppins";
+
+    width: 80%;
+    margin: 0 auto;
+
+    font-size: 4vw;
+    line-height: 5vw;
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 5vw 0vw;
+
+    
+}
+
+
+
+.certif-container-sm {
+    box-sizing: border-box;
+    padding: 8vw 0vw;
+    padding-left: 20vw;
+    padding-bottom: 16vw;
+}
+
+.certif-row-sm {
+    box-sizing: border-box;
+    padding: 2.6vw 0vw;
+    width: 100%;
+}
+
+.certif-heading-sm {
+    color: #D0021B;
+    font-family: "Megan June";
+    font-size: 6vw;
+    
+    letter-spacing: .026vw;
+
+    box-sizing: border-box;
+    padding-left: 5vw;
+}
+
+/* Programs and Prices - sm */
+
+.programs-title {
+    width: 100%;
+    font-size: 7vw;
+    box-sizing: border-box;
+    padding: 4vw 0vw;   
+}
+
+.programs-row-sm {
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 5.3vw 0vw;
+}
+
+.programs-col-sm-1 {
+    box-sizing: border-box;
+    padding-left: 5vw;
+}
+
+.programs-col-sm-1 img {
+    width: 28.26vw;
+}
+
+.programs-heading-sm {
+    font-family: "Megan June";
+    font-size: 6.4vw;
+    color: #133A68;
+}
+
+.programs-col-sm-2 {
+    position: relative;
+    margin-top: 2%;
+}
+
+.programs-description-sm {
+    font-family: "Poppins";
+    font-size: 4.27vw;
+}
+
+.card {
+    font-family: "Poppins";
+    color: #133A68;
+}
+
+.swimmers-age {
+    width: 80%;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    padding: 4vw 0vw;
+}
+
+.swimmers-age-text {
+    font-family: "Freight";
+    color: #133A68;
+    text-align: center;
+    font-size: 4vw;
+    line-height: 7vw;
+}
+
+.skills-container-sm {
+    width: 80%;
+    margin: 0 auto;
+
+    text-align: center;
+
+    box-sizing: border-box;
+    padding: 5vw 0vw;
+}
+
+.skills-heading-sm {
+    font-family: "Megan June";
+    font-size: 16px;
+    color: #D0021B;
+}
+
+.dont-give-up-container {
+    background: linear-gradient(to right bottom,
+    #F8FCFE 50%, #EAF8FC 50%);
+}
+
+.seven-lessons-container {
+    background: linear-gradient(to right bottom,
+    #FEFBF6 50%, #FBF5EC 50%);
+}
+
+.dont-give-up-container, .seven-lessons-container {
+    font-family: "Freight";
+    color: #133A68;
+    text-align: center;
+
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 4vw;
+    line-height: 6vw;
+    padding: 5vw;
+}
+
+
+
+.seven-lessons-heading, .dont-give-up-heading {
+    font-family: "Megan June";
+    color: #D0021B;
+}
+
+.dont-give-up-heading {
+    box-sizing: border-box;
+    padding: 5px 0px;
+    font-size: 6vw;
+}
+
+.seven-lessons-heading {
+    font-size: 8vw;
+}
+
+.seven-lessons-container a {
+    text-decoration: none;
+    color: #D0021B;
+}
+
+.our-policies-title {
+    font-size: 9vw;
+    padding: 10vw 0vw;
+}
+
+.policies-container {
+    font-family: "Freight";
+    font-size: 4vw;
+    color: #133A68;
+
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+
+    letter-spacing: 0.4vw;
+    line-height: 7.2vw;
+}
+
+.safety-heading, .scheduling-cancel-heading {
+    font-family: "Freight";
+    color: #D0021B;
+    font-size: 6vw;
+
+    padding: 20px 0px;
+}
+
+.safety-heading {
+    padding-top: 0vw;
+}
+
+.pay-container {
+    box-sizing: border-box;
+    padding-bottom: 5vw;
+}
+
+.payment-policy-heading, .payment-deadlines-heading {
+    font-family: "Freight";
+    color: rgb(148, 190, 99);
+    font-size: 24px;
+
+    padding: 20px 0px;
+}
+
+.footer {
+    width: 100%;
+    background: linear-gradient(#CFEFF9, #D4F1FA);
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+    size: 24px;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+
+.footer a {
+    font-family: "Megan June";
+    color: #133A68;
+
+}
+
+.come-swim-title {
+    text-align: center;
+    font-size: 5vw;
+
+    box-sizing: border-box;
+
+}
+
+.footer-text {
+    box-sizing: border-box;
+    margin: -10px 0px -10px 0px;
+}
+
+#body-top-ocean-about {
+    box-sizing: border-box;
+    padding: 2vw 0vw;
+}
+
+.in-progress img {
+    width: 100px;
+}
+
+.makenna-pic-sm img {
+    width: 55vw;
+
+    box-sizing: border-box;
+    padding: 4vw 0vw;
+}
+
+.about-title-sm {
+    width: 100%;
+    display: inline-block;
+    font-size: 9vw;
+
+    box-sizing: border-box;
+    padding: 4vw 0vw;
+}
+
+.about-makenna-background, .contact-me-background {
+    text-align: center;
+    background: linear-gradient(#F5DFBF, #FFFFFF);
+    width: 75%;
+
+    box-sizing: border-box;
+    border-radius: 50px;
+
+    margin: 0 auto;
+    box-shadow: -1px 0px 0px (rgb(0, 0, 0, 50));
+    padding: 10px;
+}
+
+.about-text-container-sm {
+    width: 92%;
+    margin: 0 auto;
+    
+    font-family: "Freight";
+    font-size: 4.5vw;
+    text-align: left;
+    line-height: 8vw;
+    color: #133A68;
+}
+
+.contact-me-background {
+    background: linear-gradient(rgb(245, 223, 191), #FFFFFF);
+    display: block;
+}
+
+.contact-me-title {
+    padding-top: 20px;
+}
+
+.about-and-contact-background h4 {
+    padding-top: 20px;
+}
+
+.scheduling-intro {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    font-family: "Poppins";
+    color: #133A68;
+    font-size: 2vw;
+
+    letter-spacing: 1.5px;
+    line-height: 30px;
+}
+
+.scheduling-intro p {
+    padding: 2vw 0vw;
+}
+
+
+
+
+/*** ABOUT MAKENNA ***/
+
+
+
+.contact-me-background {
+    background: none;
+    width: 100%;
+    display: inline-block;
+    padding: 0vw;
+}
+
+
+
+.form-container {
+    width: 100%;
+}
+
+.form-request p {
+    font-family: "Poppins";
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 0 auto;
+
+    color: #133A68;
+}
+
+
+.form-container {
+    background: #ECECEC;
+    width: 100%;
+}
+
+.form-bottom {
+    box-sizing: border-box;
+    padding: 2vw;
+    padding-right: 4vw;
+}
+
+.form-bottom label {
+    display: block;
+}
+
+/* input[type=text], select {
+            
+    display: block;
+    overflow: auto;
+    
+    width: 75% !important;
+    height: 40px !important;
+    border: 1px solid #ccc;
+    border-radius: 3px !important;
+    box-sizing: border-box;
+    
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+} */
+
+#messagebody {
+    height: 200px;
+}
+
+input[type=submit] {
+    background: lightgrey;
+    border-radius: 10px;
+    color: black;
+
+    position: right;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color:#133A68;
+}
+
+.social-media-container-sm {
+    width: 80%;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 30px;
+   
+}
+.social-media-container-sm img {
+    width: 50%;
+}
+
+.map-container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.map {
+    width: 100%;
+    height: 200px;
+}
+
+.map-caption {
+    font-family: "Poppins";
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+
+.in-progress {
+    padding: 5vw 0vw;
+    padding-bottom: 10vw;
+}
+
+/** MOBILE DEVICES, portrait and landscape **/
+
+    /* iPhone 8 */
+    @media only screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 667px),
+    /* iPhone 6,7,8 Plus*/
+    screen 
+    and (min-device-width : 414px) 
+    and (max-device-width : 736px),
+    /* iPhone X */
+    screen 
+    and (min-device-width : 375px) 
+    and (max-device-width : 812px)
+    and (-webkit-device-pixel-ratio : 3),
+    /* Galaxy S4 */
+    screen 
+    and (device-width: 320px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3),
+    /* Galaxy S5 */
+    screen 
+    and (device-width: 360px) 
+    and (device-height: 640px) 
+    and (-webkit-device-pixel-ratio: 3),
+    screen and (min-width: 360px) and (max-width: 767px) {
+    
+        /* HIDDEN in screen size */
+
+        .hidden-sm {
+            display: none !important;
+        }
+
+    } /* End of small css */
+
+    @media (max-width: 768px) {
+        .goals-row {
+        display: inline-block;
+    }
+    }
+
+    @media (min-width: 768px) {
+        .goals-row {
+            display: flex;
+        }
+    }
+
+    /* Beginning of Desktop and bigger */
+    @media (min-width: 768px) {
+        .hidden-lg {
+            display: none !important;
+        }
+
+        .middle {
+        position: relative;
+        left: 3.5%;
+        display: inline-block;
+        }
+
+        .tagline {
+            font-size: 2vw;
+            position: relative;
+            left: 1.25%;
+        }
+
+        .red-script {
+            font-size: 3.33vw;
+        }
+
+        .kids-container img {
+        box-sizing: border-box;
+        padding: 0vw 8vw; /*10 top and bottom, 30 left and right*/
+    }
+    
+    .kids-container {
+    
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    
+        background-color: #C4EAF7;
+    
+    }
+
+        .home-intro-text {
+        width: 45%;
+        margin: 0 auto;
+        padding: 50px 0px; /*top and bottom*/
+        
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        line-height: 27px;
+
+        text-align: left;
+        }
+
+        #home-intro-bottom {
+            margin-top: 0vw;
+        }
+
+    .index-pics-lg {
+        width: 100%;
+    }
+
+    .index-pics-lg img {
+        box-sizing: border-box;
+        padding: 0vw 2vw;
+    }
+
+        .goals-container {
+        width: 80%;
+        margin: 0 auto; 
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+
+    #goals-title {
+       padding: 20px;
+    }
+
+    .goals-row {
+        width: 100%;
+        display: flex;
+    }
+
+    .goals-col {
+        box-sizing: border-box;
+        padding: 25px;
+    }
+
+    .goals-col img {
+        padding: 2vw 0vw;
+        text-align: center;
+    }
+    
+    .goals-heading {
+        
+        font-size: 2.4vw;
+        letter-spacing: 0.1vw;
+        line-height: 1vw;
+    
+        text-align: center;
+        box-sizing: border-box;
+        padding: 2vw 0vw;
+    }
+    
+    .goals-text {
+    
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 10px 0px;
+    
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        line-height: 27px;
+    
+        text-align: center;
+    
+    }
+
+    .certif-container-lg {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+
+        box-sizing: border-box;
+        padding: 5vw 0vw;
+    }
+
+    .certif-row-lg {
+        font-family: "Megan June";
+    }
+    
+    .certif-col-lg{
+        width: 50%;
+    }
+    
+    .certif-container-lg img {
+        width: 75%;
+        padding: 2.08vw 0vw;
+    }
+    
+        .services-container-lg {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 1.9vw;
+    
+        
+    }
+
+    #services-title-lg {
+        padding-bottom: 20px;
+    }
+    
+    .services-container-lg {
+        box-sizing: border-box;
+        padding: 5vw 0vw;
+    }
+
+    #services-col-lg-left {
+        background: linear-gradient(to right bottom,
+        #D1284A 50%, #D0021B 50%);
+
+        box-sizing: border-box;
+        padding: 3.82vw 0vw;
+    }
+    
+    #services-col-lg-right {
+        background: linear-gradient(to right bottom,
+        #4FC0F8 50%, #44B8F8 50%);
+
+        box-sizing: border-box;
+        padding: 3.82vw 0vw;
+    }
+    
+    .services-lg-white-heading {
+        font-family: "SignPainter";
+        color: white;
+        font-size: 4.17vw;
+    }
+    
+    #services-col-lg-left a:hover, #services-col-lg-right a:hover {
+        text-decoration: none;
+    }
+    
+    #services-col-lg-left h3:hover, #services-col-lg-right h3:hover {
+        color: #EFEB8B;
+    }
+
+    .programs-title {
+        box-sizing: border-box;
+        padding: 45px 0px;
+    }
+
+    .programs-container-lg {
+        width: 75%;
+        margin: 0 auto;
+        text-align: center;
+    
+        box-sizing: border-box;
+    }
+
+    .programs-heading-lg {
+        font-family: "Megan June";
+        color: #133A68;
+        font-size: 30px;
+    
+        box-sizing: border-box;
+        padding-top: 30px;
+    
+        letter-spacing: 1.25px;
+        line-height: 31px;
+    }
+
+    .pp-images-lg {
+        width: 20vw;
+    }
+
+    .programs-description-lg {
+        font-family: "Poppins";
+        color: #4A4A4A;
+        font-size: 18px;
+    
+        letter-spacing: 1.33px;
+        line-height: 23px;
+    }
+
+    .learn-more {
+        background-color: transparent;
+        border: none;
+        }
+
+        .swimmers-age p {
+        margin: 0 auto;
+        text-align: center;
+    
+        font-family: "Freight";
+        color: #133A68;
+        font-size: 18px;
+    
+        letter-spacing: 1px;
+        line-height: 30px;
+    
+        box-sizing: border-box;
+    }
+
+    .policies-container {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 24px;
+    }
+
+    .our-policies-title {
+        padding: 3vw 0vw;
+    }
+
+    .skills-container-lg {
+        width: 75%;
+    
+        margin: 0 auto;
+        text-align: center;
+
+        box-sizing: border-box;
+        padding: 2vw 0vw;
+    }
+
+    .skills-heading-lg {
+        font-family: "Megan June";
+        font-size: 30px;
+        color: #D0021B;
+    }
+
+    .skills-text-lg {
+        font-family: "Poppins";
+        color: #133A68;
+        font-size: 16px;
+    
+        box-sizing: border-box;
+        padding: 10px;
+    
+        line-height: 20px;
+    }
+
+    .seven-lessons-heading, .dont-give-up-heading {
+        font-family: "Megan June";
+        color: #D0021B;
+        font-size: 30px;
+        margin: -5px;
+        
+    }
+
+    .seven-lessons-container, .dont-give-up-container {
+        font-size: 18px;
+    
+        letter-spacing: 1px;
+        line-height: 30px;
+    
+        box-sizing: border-box;
+        padding: 30px 0px;
+    }
+
+    .safety-container, .scheduling-cancel-container, .pay-container {
+        width: 75%;
+        margin: 0 auto;
+
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        line-height: 25px;
+    }
+
+    .safety-heading, .scheduling-cancel-heading, .payment-policy-heading,
+    .payment-deadlines-heading {
+        font-size: 1.94vw;
+    }
+
+    .ready-to-book-title {
+        padding: 2vw 0vw;
+    }
+
+    .scheduling-intro {
+        width: 75%;
+ 
+        font-size: 1vw;
+    
+        letter-spacing: 1.5px;
+        line-height: 30px;
+    }
+
+    .logo-scheduling {
+        width: 10vw;
+    }
+
+    .in-progress img {
+        width: 250px;
+    }
+
+    .about-text-container-lg {
+
+        padding: 20px;
+        padding-top: 0px;
+        text-align: center;
+        max-width: 80%;
+        margin: 0 auto;
+    
+        font-family: "Freight";
+        size: 20px;
+        letter-spacing: 1.5px;
+        line-height: 35px;
+        color: #133A68;
+        text-align: left;
+    }
+
+    .about-title-lg {
+        font-size: 4vw;
+        
+        box-sizing: border-box;
+        padding: 2vw 0vw;
+    }
+
+    .makenna-pic-lg img {
+        width: 20vw;
+
+        box-sizing: border-box;
+        padding: 3vw 0vw;
+        padding-top: 0vw;
+    }
+
+    .map-container {
+        text-align: center;
+    }
+    
+    .map {
+        width: 400px;
+        margin: 0 auto;
+        height: 200px;
+    }
+    
+    
+    /***Social Media***/
+    
+    .social-media-container-lg {
+        width: 50%;
+        margin: 0 auto;
+
+        box-sizing: border-box;
+        padding-bottom: 3vw;
+    
+    }
+
+    .social-media-container-lg img {
+        width: 4vw;
+    }
+    
+    #facebook-col img, #twitter-col img, #instagram-col img {
+        max-width: 50%;
+        max-height: 100wv;
+    }
+
+    .form-container {
+        width: 75%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 10px;
+        background: none;
+    
+    }
+    
+    
+    
+    .form-bottom {
+        box-sizing: border-box;
+        padding-left: 100px;
+    }
+    
+    /* input[type=text], select, textarea {
+        
+        display: block;
+        overflow: auto;
+        
+        width: 80%;
+        
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+        
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    
+    } */
+    
+    .form-label {
+        font-family: "Poppins";
+        color: black;
+    }
+    
+    #messagebody {
+        width: 100%;
+        height: 20vw;
+    }
+
+    .come-swim-title {
+        font-size: 2.5vw;
+    }
+    }

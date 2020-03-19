@@ -1,0 +1,42 @@
+/*https://codepen.io/daneden/pen/BizAg*/
+
+html, body {
+
+  }
+  
+  .shine {
+
+
+    animation: shine 4s infinite, hover 2s alternate infinite ease-in-out;
+    
+    
+  }
+  
+  @-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
+  
+  @-webkit-keyframes hover {
+    from {
+      transform: translateY(0%);
+    }
+    
+    to {
+      transform: translateY(-15%);
+    }
+  }
+  
+  @-webkit-keyframes hoverSmall {
+    from {
+      transform: translateY(30%) rotate(45deg);
+    }
+    to {
+      transform: translateY(-10%) rotate(45deg);
+    }
+  }
