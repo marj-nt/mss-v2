@@ -835,11 +835,6 @@ input[type=submit]:hover {
     margin: 0 auto;
 }
 
-.in-progress {
-    padding: 5vw 0vw;
-    padding-bottom: 10vw;
-}
-
 /** MOBILE DEVICES, portrait and landscape **/
 
     /* iPhone 8 */
@@ -929,9 +924,33 @@ input[type=submit]:hover {
             margin: 30px auto 0px 0px;
         }
 
-        #about-makenna .red-script {
+        #about-makenna .red-script, #mss-contact .red-script, #mss-scheduling .red-script {
             font-size: 36px;
             padding: 10px 0px;
+        }
+
+        #social-media-row {
+            width: 75%;
+        }
+
+        #facebook-col, #instagram-col, #twitter-col {
+            padding: 0px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .come-swim-title {
+            font-size: 32px !important;
+        }
+
+        .scheduling-intro p {
+            line-height: 25px;
+            font-size: 16px !important;
+        }
+
+        .in-progress {
+            font-size: 16px;
+            padding-bottom: 20px;
         }
 
 
