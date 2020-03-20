@@ -889,6 +889,16 @@ input[type=submit]:hover {
             height: 50vh !important;
         }
 
+        #goals-container {
+            width: 100%;
+            padding: 100px 0px;
+        }
+
+        #goals-descr {
+            width: 75%;
+            margin: 0 auto;
+        }
+
     } /* End of small css */
 
     @media (max-width: 768px) {
