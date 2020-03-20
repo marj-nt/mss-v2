@@ -305,7 +305,7 @@
     width: 92%;
     margin: 0 auto;
 
-    font-family: "Freight";
+    font-family: "Poppins";
     font-size: 4.2vw;
     line-height: 7vw;
 
@@ -492,6 +492,7 @@
 .card {
     font-family: "Poppins";
     color: #133A68;
+        line-height: 25px;
 }
 
 .swimmers-age {
@@ -503,10 +504,10 @@
 }
 
 .swimmers-age-text {
-    font-family: "Freight";
+    
     color: #133A68;
     text-align: center;
-    font-size: 4vw;
+    font-size: 12px;
     line-height: 7vw;
 }
 
@@ -537,13 +538,13 @@
 }
 
 .dont-give-up-container, .seven-lessons-container {
-    font-family: "Freight";
+    font-family: "Poppins";
     color: #133A68;
     text-align: center;
 
     width: 100%;
     box-sizing: border-box;
-    font-size: 4vw;
+    font-size: 16px;
     line-height: 6vw;
     padding: 5vw;
 }
@@ -556,6 +557,7 @@
 }
 
 .dont-give-up-heading {
+    color: #133A68 !important;
     box-sizing: border-box;
     padding: 5px 0px;
     font-size: 6vw;
@@ -576,8 +578,8 @@
 }
 
 .policies-container {
-    font-family: "Freight";
-    font-size: 4vw;
+    font-family: "Poppins";
+    font-size: 14px;
     color: #133A68;
 
     width: 90%;
@@ -589,7 +591,7 @@
 }
 
 .safety-heading, .scheduling-cancel-heading {
-    font-family: "Freight";
+    font-family: "Poppins";
     color: #D0021B;
     font-size: 6vw;
 
@@ -606,7 +608,7 @@
 }
 
 .payment-policy-heading, .payment-deadlines-heading {
-    font-family: "Freight";
+    font-family: "Poppins";
     color: rgb(148, 190, 99);
     font-size: 24px;
 
@@ -687,8 +689,8 @@
     width: 92%;
     margin: 0 auto;
     
-    font-family: "Freight";
-    font-size: 4.5vw;
+    font-family: "Poppins";
+    font-size: 14px;
     text-align: left;
     line-height: 8vw;
     color: #133A68;
@@ -869,6 +871,22 @@ input[type=submit]:hover {
 
         .hidden-sm {
             display: none !important;
+        }
+
+        #landing h1 {
+            font-family: 'Humble';
+            font-size: 3em;
+            color: white;
+        }
+        
+        #landing h2 {
+            font-family: 'Megan June';
+            font-size: 1.1em;
+            color: white;
+        }
+
+        .full {
+            height: 50vh !important;
         }
 
     } /* End of small css */
@@ -1117,9 +1135,9 @@ input[type=submit]:hover {
         margin: 0 auto;
         text-align: center;
     
-        font-family: "Freight";
+        font-family: "Poppins";
         color: #133A68;
-        font-size: 18px;
+        font-size: 14px;
     
         letter-spacing: 1px;
         line-height: 30px;
@@ -1130,7 +1148,7 @@ input[type=submit]:hover {
     .policies-container {
         width: 80%;
         margin: 0 auto;
-        font-size: 24px;
+        font-size: 14px;
     }
 
     .our-policies-title {
@@ -1173,7 +1191,7 @@ input[type=submit]:hover {
     }
 
     .seven-lessons-container, .dont-give-up-container {
-        font-size: 18px;
+        font-size: 14px;
     
         letter-spacing: 1px;
         line-height: 30px;
@@ -1186,14 +1204,14 @@ input[type=submit]:hover {
         width: 75%;
         margin: 0 auto;
 
-        font-size: 16px;
-        letter-spacing: 1.5px;
+        font-size: 14px;
+        letter-spacing: 1px;
         line-height: 25px;
     }
 
     .safety-heading, .scheduling-cancel-heading, .payment-policy-heading,
     .payment-deadlines-heading {
-        font-size: 1.94vw;
+        font-size: 22px;
     }
 
     .ready-to-book-title {
@@ -1225,9 +1243,10 @@ input[type=submit]:hover {
         max-width: 80%;
         margin: 0 auto;
     
-        font-family: "Freight";
+        font-family: "Poppins";
+        font-size: 14px;
         size: 20px;
-        letter-spacing: 1.5px;
+        letter-spacing: 1px;
         line-height: 35px;
         color: #133A68;
         text-align: left;
@@ -1276,7 +1295,14 @@ input[type=submit]:hover {
     
     #facebook-col img, #twitter-col img, #instagram-col img {
         max-width: 50%;
-        max-height: 100wv;
+        max-height: 100px;
+        
+        
+    }
+
+    #facebook-col, #twitter-col, #instagram-col {
+        padding-top: 20px;
+        text-align: center;
     }
 
     .form-container {
@@ -1292,7 +1318,7 @@ input[type=submit]:hover {
     
     .form-bottom {
         box-sizing: border-box;
-        padding-left: 100px;
+        padding-left: 50px;
     }
     
     /* input[type=text], select, textarea {
@@ -1325,5 +1351,11 @@ input[type=submit]:hover {
 
     .come-swim-title {
         font-size: 2.5vw;
+    }
+    
+    .full {
+ 
+        height: 100vh;
+        
     }
     }

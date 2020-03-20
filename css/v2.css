@@ -30,16 +30,22 @@ body
 
 .navbar {
     font-family: 'Megan June';
-    background-color: rgba(163, 237, 255, 0.75);
+    background-color: rgba(163, 237, 255, 0.75) !important;
+    
     position: fixed;
     width: 100%;
-    
+    z-index: 1;
 }
 
-.navbar a {
+.nav-item a {
+    font-size: 20px !important;
+    margin: 0px 50px 0px 50px;
+}
+
+.nav-link {
     color: #133A68;
 }
-.navbar a:hover {
+.nav-link:hover {
     color: grey;
 }
 
@@ -47,6 +53,14 @@ body
     height: 50px;
     position: relative;
     left: 20px;
+}
+
+.navbar-nav {
+    text-align: right;
+}
+
+.navbar-toggler-icon {
+    color: white;
 }
 
 .full {
@@ -146,7 +160,7 @@ body
     box-sizing: border-box;
     border-radius: 50px;
 
-    margin: 30px auto 0 auto;
+    margin: 30px auto 30px auto;
 
     box-shadow: -1px 0px 0px (rgb(0, 0, 0, 50));
     padding: 10px;
@@ -273,6 +287,10 @@ body
       text-align: center;
       position: relative;
       box-shadow: 2px 2px 5px #d1d1d1;
+      
+      font-family: "Poppins";
+
+      
   }
 
   .program-prices-outer img {
@@ -297,9 +315,30 @@ body
     width: 75%;
     margin: 0 auto;
     border: 5px solid;
-    border-image-source: linear-gradient(180deg, #44B2E3, rgb(75, 201, 255));
+    border-image-source: linear-gradient(180deg, #44B2E3, rgb(137, 214, 247));
   border-image-slice: 1;
 }
+
+#enroll-button {
+    font-size: 20px;
+    border: 4px solid #D0021B;
+    padding: 10px 20px;
+    border-radius: 15px !important;
+    margin: 10px 0px 10px 0px;
+}
+
+#let-us-know, #our-policies {
+    color: #D0021B;
+}
+
+#about-makenna .body-top-ocean {
+    height: 100%;
+}
+
+
+
+
+    
 
 
 
