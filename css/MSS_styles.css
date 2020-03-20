@@ -869,6 +869,13 @@ input[type=submit]:hover {
     
         /* HIDDEN in screen size */
 
+        body {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden !important;
+        }
+
         .hidden-sm {
             display: none !important;
         }
@@ -897,6 +904,14 @@ input[type=submit]:hover {
         #goals-descr {
             width: 75%;
             margin: 0 auto;
+        }
+
+        #form-outer {
+            width: 100%;
+        }
+
+        #messagebody {
+            width: 100%;
         }
 
     } /* End of small css */
