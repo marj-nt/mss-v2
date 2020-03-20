@@ -65,7 +65,7 @@
 
                 <div class="row programs-row-sm">
                     <div class="col programs-col-sm-1">
-                        <img src="images/babies_pic_mobile.png"
+                        <img class="pp-mobile-collapse" src="images/babies_pic_mobile.png"
                         data-toggle="collapse" 
                         data-target=".babies-and-children-collapse-mobile" aria-expanded="false" 
                         aria-controls="babies-and-children-collapse-mobile"/>
@@ -96,7 +96,7 @@
 
                 <div class="row programs-row-sm">
                     <div class="col programs-col-sm-1">
-                        <img src="images/kids_pic_mobile.png" data-toggle="collapse" 
+                        <img class="pp-mobile-collapse" src="images/kids_pic_mobile.png" data-toggle="collapse" 
                         data-target=".all-ages-collapse-mobile" aria-expanded="false" 
                         aria-controls=".all-ages-collapse-mobile"/>
                     </div>
@@ -123,7 +123,7 @@
 
                 <div class="row programs-row-sm">
                     <div class="col programs-col-sm-1">
-                        <img src="images/party_lifeguard_mobile.png"
+                        <img class="pp-mobile-collapse" src="images/party_lifeguard_mobile.png"
                         data-toggle="collapse" 
                         data-target=".party-lifeguard-mobile-collapse" aria-expanded="false" 
                         aria-controls=".party-lifeguard-mobile-collapse"/>
@@ -145,7 +145,7 @@
 
             </div> <!--End of programs-container-mobile-->
 
-            <div class="row">
+            <div class="row hidden-sm">
                 <div class="col col-md-4 col-xs-12">
                     <div class="program-prices-outer">
                         <div class="program-prices-top">
@@ -500,6 +500,11 @@
           
           <script>
             $('button').click( function(e) {
+    $('.collapse').collapse('hide');
+});
+        </script>
+        <script>
+            $('.pp-mobile-collapse').click( function(e) {
     $('.collapse').collapse('hide');
 });
         </script>

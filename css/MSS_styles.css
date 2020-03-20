@@ -924,7 +924,8 @@ input[type=submit]:hover {
             margin: 30px auto 0px 0px;
         }
 
-        #about-makenna .red-script, #mss-contact .red-script, #mss-scheduling .red-script {
+        #about-makenna .red-script, #mss-contact .red-script, #mss-scheduling .red-script,
+        #mss-programs-and-prices .red-script {
             font-size: 36px;
             padding: 10px 0px;
         }
@@ -951,6 +952,18 @@ input[type=submit]:hover {
         .in-progress {
             font-size: 16px;
             padding-bottom: 20px;
+        }
+
+        .swimmers-age-text {
+            font-size: 16px;
+        }
+
+        #seven-lessons #enroll-button {
+            margin: 20px 0px 20px 0px !important;
+        }
+
+        .dont-give-up-heading {
+            font-size: 32px !important;
         }
 
 
