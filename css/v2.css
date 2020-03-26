@@ -95,7 +95,7 @@ body
 }
 
 #landing h1 {
-    font-family: 'Humble';
+    font-family: 'SignPainter';
     font-size: 5em;
     color: white;
 }
@@ -104,6 +104,27 @@ body
     font-family: 'Megan June';
     font-size: 2em;
     color: white;
+}
+
+.learn-more:hover {
+    color: white;
+    font-family: "Megan June";
+    
+    text-decoration: none;
+    
+}
+
+.learn-more h3 {
+    color: white;
+    font-family: "Megan June";
+    text-decoration: none;
+
+    border: 4px solid white;
+    width: 200px;
+    border-radius: 5px;
+    margin: 50px auto 0 auto !important;
+    margin-top: 20px;
+    padding: 5px 0px;
 }
 
 .home-intro-container img {
@@ -327,6 +348,7 @@ body
     padding: 10px 20px;
     border-radius: 15px !important;
     margin: 10px 0px 10px 0px;
+    width: 200px;
 }
 
 #let-us-know, #our-policies {
