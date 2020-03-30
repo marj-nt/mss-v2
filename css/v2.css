@@ -111,20 +111,24 @@ body
     font-family: "Megan June";
     
     text-decoration: none;
+    cursor: pointer;
     
 }
 
-.learn-more h3 {
+.learn-more {
     color: white;
     font-family: "Megan June";
+    font-weight: bolder;
     text-decoration: none;
+    letter-spacing: 2 !important;
 
-    border: 4px solid white;
+    border: 4px solid white !important;
     width: 200px;
     border-radius: 5px;
     margin: 50px auto 0 auto !important;
     margin-top: 20px;
     padding: 5px 0px;
+    font-size: 1.5em;
 }
 
 .home-intro-container img {
@@ -342,14 +346,21 @@ body
   border-image-slice: 1;
 }
 
-#enroll-button {
+.seven-lessons-container button {
+    cursor: pointer;
     font-size: 20px;
     border: 4px solid #D0021B;
     padding: 10px 20px;
     border-radius: 15px !important;
     margin: 10px 0px 10px 0px;
-    width: 200px;
+    width: 150px;
+    margin: 0 auto;
+
+    background: none;
+    color: #D0021B;
 }
+
+
 
 #let-us-know, #our-policies {
     color: #D0021B;
@@ -359,6 +370,31 @@ body
     height: 100%;
 }
 
+
+
+input {
+    border: none;
+}
+
+
+.programs-headers-lg {
+    font-family: "Megan June";
+    font-size: 1.5em;
+    color: #133A68;
+}
+
+.send-button {
+    font-family: "Megan June";
+    letter-spacing: 1.5;
+}
+
+.certif-row-sm img {
+    width: 50px;
+}
+
+.expand {
+    border: none;
+}
 
 
 

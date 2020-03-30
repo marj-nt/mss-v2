@@ -374,7 +374,7 @@
     width: 100%;
 
     box-sizing: border-box;
-    padding: 2vw 0vw;
+    padding: 20px 0px;
 }
 
 .goals-row {
@@ -418,7 +418,7 @@
     text-align: center;
 
     box-sizing: border-box;
-    padding: 5vw 0vw;
+    margin: 20px 0px 20px 0px;
 
     
 }
@@ -897,7 +897,7 @@ input[type=submit]:hover {
 
         #goals-container {
             width: 100%;
-            padding: 100px 0px;
+            padding: 80px 0px 40px 0px;
         }
 
         #goals-descr {
