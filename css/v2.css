@@ -346,8 +346,8 @@ body
     
 }
 
-.collapse-payment-policy {
-    padding-bottom: 40px !important;
+.policies-main .collapse {
+    padding-bottom: 20px !important;
 }
 
 .programs-row-sm {

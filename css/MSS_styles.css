@@ -254,8 +254,7 @@
 }
 
 
-
-.kids-container img {
+.home-intro-container .hidden-lg {
     width: 100%;
 }
 
@@ -328,8 +327,6 @@
 
 .index-pics-sm img {
     width: 100%;
-
-    z-index: -1;
 }
 
 .index-pics-sm .btn{
@@ -969,6 +966,17 @@ input[type=submit]:hover {
         .dont-give-up-heading {
             font-size: 32px !important;
         }
+
+        .learn-more {
+            font-size: 1em;
+            transform: translateY(-20px);
+        }
+
+        .waves {
+            height: 40px;
+            min-height: 40px;
+            transform: translateY(-20px) !important;
+          }
 
 
     } /* End of small css */
