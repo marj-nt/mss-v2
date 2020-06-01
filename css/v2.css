@@ -132,8 +132,12 @@ body
     font-size: 1.5em;
 }
 
-.home-intro-container img {
+.home-intro-container img .hidden-lg {
     width: 400px;
+}
+
+.index-pics-lg img {
+    padding: 0px 20px;
 }
 
 .home-intro-container h3 {
@@ -329,7 +333,7 @@ body
   }
 
   .policies-main img {
-      width: 150px;
+      width: 45%;
   }
 
   .policies-main {

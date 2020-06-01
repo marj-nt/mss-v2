@@ -145,6 +145,7 @@
 
             </div> <!--End of programs-container-mobile-->
 
+        <div class="programs-main">
             <div class="row hidden-sm">
                 <div class="col col-md-4 col-xs-12">
                     <div class="program-prices-outer">
@@ -213,6 +214,7 @@
                     and building good muscle memory early on!
                 </div>
             </div>
+        
 
             
 
@@ -242,11 +244,11 @@
                 </div>
             </div>
                 
-
+            
                     
 
-                </div> <!-- End of programs-container -->
-
+            </div> <!-- End of programs-container -->
+        </div>
                     
                     
                     
@@ -432,9 +434,11 @@
             </div>
             
             </div>
+
+            <div class="collapse-bottom">
             
 
-            <div class="collapse collapse-safety">
+            <div class="collapse collapse-safety hidden-sm">
                 <!-- Make CSS style on "card" not "collapse" to prevent transition -->
                 <div class="card card-body">
                     <div class="safety-container">
@@ -465,7 +469,7 @@
                 </div>
             </div>
 
-            <div class="collapse collapse-sc">
+            <div class="collapse collapse-sc hidden-sm">
                 <!-- Make CSS style on "card" not "collapse" to prevent transition -->
                 <div class="card card-body">
                     <div class="safety-container">
@@ -501,7 +505,7 @@
                 </div>
             </div>
 
-            <div class="collapse collapse-payment-policy">
+            <div class="collapse collapse-payment-policy hidden-sm">
                 <!-- Make CSS style on "card" not "collapse" to prevent transition -->
                 <div class="card card-body">
                     <div class="safety-container">
@@ -536,6 +540,7 @@
                         </p>   
                     </div>
                 </div>
+            </div>
             </div>
             </div>
 
@@ -673,8 +678,13 @@
           </script>
           
           <script>
-            $('button').click( function(e) {
-    $('.collapse').collapse('hide');
+            $('.programs-main button').click( function(e) {
+    $('.programs-main .collapse').collapse('hide');
+});
+        </script>
+        <script>
+            $('.policies-main button').click( function(e) {
+    $('.policies-main .collapse').collapse('hide');
 });
         </script>
         <script>

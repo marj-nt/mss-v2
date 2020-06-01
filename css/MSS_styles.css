@@ -285,7 +285,7 @@
 
     box-sizing: border-box;
     box-sizing: border-box;
-    padding: 5vw 0vw;
+    padding: 5vw 0vw 20px 0px;
 }
 
 .red-script {
@@ -322,7 +322,6 @@
 
 #home-intro-bottom {
     box-sizing: border-box;
-    margin-top: -10vw;
 }
 
 .index-pics-sm img {
@@ -1048,11 +1047,13 @@ input[type=submit]:hover {
 
     .index-pics-lg {
         width: 100%;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .index-pics-lg img {
         box-sizing: border-box;
-        padding: 0vw 2vw;
+
     }
 
         .goals-container {
